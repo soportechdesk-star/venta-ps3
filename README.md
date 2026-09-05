@@ -56,3 +56,8 @@ Luego reemplazá `assets/videos/consola-menu-1.mp4` y/o `consola-menu-2.mp4` por
 ## Recomendación para GitHub Pages
 
 GitHub Pages puede publicar directamente archivos estáticos como HTML, CSS y JavaScript desde un repositorio. El archivo `index.html` debe quedar en la raíz de la fuente publicada. El proyecto incluye `.nojekyll` para evitar un proceso Jekyll innecesario en este sitio estático.
+
+
+## Sección de entretenimiento
+
+La versión actual incorpora las 4 capturas reales de `imagenes-streaming/` en una sección dedicada a **Movian7**, destacando que la unidad tiene Movian7 instalado y que también se puede ver **YouTube**. Las capturas se pueden abrir en el visor ampliado de la página.
