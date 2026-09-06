@@ -4,21 +4,21 @@ const games = [
     "genre": "Acción / Sigilo",
     "description": "Una enorme aventura de infiltración y mundo abierto protagonizada por Venom Snake.",
     "category": "destacado",
-    "status": "próximo"
+    "status": "incluido"
   },
   {
     "title": "Resident Evil 5",
     "genre": "Acción / Survival Horror",
     "description": "Combate, supervivencia y cooperación en una de las entregas más orientadas a la acción de la saga.",
     "category": "terror",
-    "status": "próximo"
+    "status": "incluido"
   },
   {
     "title": "Resident Evil 6",
     "genre": "Acción / Survival Horror",
     "description": "Una aventura con varias campañas, protagonistas y estilos de juego.",
     "category": "terror",
-    "status": "próximo"
+    "status": "incluido"
   },
   {
     "title": "Diablo III",
@@ -307,7 +307,7 @@ document.getElementById("year").textContent = new Date().getFullYear();
 // EDIT THIS NUMBER WITH YOUR WHATSAPP NUMBER, INCLUDING COUNTRY CODE, WITHOUT + OR SPACES.
 // PEGÁ ACÁ LA URL DEL VIDEO DE YOUTUBE.
 // Ejemplo: https://www.youtube.com/watch?v=ABC123XYZ
-const youtubeVideoUrl = "";
+const youtubeVideoUrl = "https://youtu.be/C3v4i5yDeJ4?si=PVr6Qq783h1I12Mn";
 
 function getYouTubeEmbedUrl(url) {
   if (!url) return "";
