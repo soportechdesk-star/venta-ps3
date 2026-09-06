@@ -161,13 +161,6 @@ const games = [
     "status": "incluido"
   },
   {
-    "title": "Tiny Brains",
-    "genre": "Puzzle / Cooperativo",
-    "description": "Puzles y desafíos cooperativos protagonizados por pequeñas criaturas con poderes.",
-    "category": "coop",
-    "status": "incluido"
-  },
-  {
     "title": "Hard Corps: Uprising",
     "genre": "Run & Gun / Arcade",
     "description": "Acción lateral intensa inspirada en los clásicos run-and-gun.",
@@ -312,8 +305,40 @@ filters.addEventListener("click", e => {
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // EDIT THIS NUMBER WITH YOUR WHATSAPP NUMBER, INCLUDING COUNTRY CODE, WITHOUT + OR SPACES.
+// PEGÁ ACÁ LA URL DEL VIDEO DE YOUTUBE.
+// Ejemplo: https://www.youtube.com/watch?v=ABC123XYZ
+const youtubeVideoUrl = "";
+
+function getYouTubeEmbedUrl(url) {
+  if (!url) return "";
+  try {
+    const value = url.trim();
+    const parsed = new URL(value);
+    let videoId = "";
+    if (parsed.hostname.includes("youtu.be")) {
+      videoId = parsed.pathname.replace(/^\//, "").split("/")[0];
+    } else if (parsed.hostname.includes("youtube.com")) {
+      if (parsed.pathname === "/watch") videoId = parsed.searchParams.get("v") || "";
+      else if (parsed.pathname.startsWith("/shorts/")) videoId = parsed.pathname.split("/")[2] || "";
+      else if (parsed.pathname.startsWith("/embed/")) videoId = parsed.pathname.split("/")[2] || "";
+    }
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : "";
+  } catch {
+    return "";
+  }
+}
+
+const youtubeEmbedUrl = getYouTubeEmbedUrl(youtubeVideoUrl);
+const youtubeFrame = document.getElementById("youtubeFrame");
+const youtubePlaceholder = document.getElementById("youtubePlaceholder");
+if (youtubeEmbedUrl && youtubeFrame) {
+  youtubeFrame.src = youtubeEmbedUrl;
+  youtubeFrame.hidden = false;
+  if (youtubePlaceholder) youtubePlaceholder.hidden = true;
+}
+
 const whatsappNumber = "5491150449061";
-const whatsappText = "Hola, vi la PS3 Super Slim de 500 GB en Marketplace y quisiera consultar por la consola.";
+const whatsappText = "Hola, vi la PS3 Super Slim de 500 GB y quisiera consultar el precio y la disponibilidad.";
 document.getElementById("whatsapp").href = "https://wa.me/" + whatsappNumber + "?text=" + encodeURIComponent(whatsappText);
 
 render();

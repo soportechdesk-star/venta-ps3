@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta property="og:title" content="PlayStation 3 Super Slim 500 GB — 32 juegos">
-  <meta property="og:description" content="PS3 Super Slim 500 GB con 32 juegos, 3 joysticks y Movian7 para entretenimiento y streaming, incluyendo YouTube.">
+  <meta property="og:title" content="PlayStation 3 Super Slim 500 GB — 31 juegos">
+  <meta property="og:description" content="PS3 Super Slim 500 GB con 31 juegos, 3 joysticks y Movian7 para entretenimiento y streaming, incluyendo YouTube.">
   <meta name="theme-color" content="#08090d">
-  <meta name="description" content="PlayStation 3 Super Slim 500 GB con 32 juegos, 3 joysticks, Movian7 para entretenimiento y streaming y acceso a YouTube.">
+  <meta name="description" content="PlayStation 3 Super Slim 500 GB con 31 juegos, 3 joysticks, Movian7 para entretenimiento y streaming y acceso a YouTube.">
   <title>PS3 Super Slim 500 GB | Juegos + Movian7 + YouTube</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,7 +20,7 @@
     <nav>
       <a href="#fotos">Fotos</a><a href="#entretenimiento">Entretenimiento</a><a href="#catalogo">Catálogo</a>
       <a href="#incluye">Incluye</a>
-      <a href="#funcionamiento">Funcionamiento</a>
+      <a href="#funcionamiento">Funcionamiento</a><a href="#video">Video</a>
       <a class="nav-cta" href="#contacto">Consultar</a>
     </nav>
   </div>
@@ -32,7 +32,7 @@
     <div class="hero-copy">
       <div class="eyebrow">PLAYSTATION 3 · 500 GB</div>
       <h1>Una PS3 preparada para <span>jugar y disfrutar.</span></h1>
-      <p class="lead">Super Slim de 500 GB, 3 joysticks, 32 juegos y <strong>Movian7 instalado</strong> para sumar entretenimiento y streaming, incluyendo <strong>YouTube</strong>.</p>
+      <p class="lead">Super Slim de 500 GB, 3 joysticks, 31 juegos y <strong>Movian7 instalado</strong> para sumar entretenimiento y streaming, incluyendo <strong>YouTube</strong>.</p>
       <div class="hero-stats">
         <div><strong>500 GB</strong><small>almacenamiento</small></div>
         <div><strong>32</strong><small>juegos del catálogo</small></div>
@@ -42,7 +42,7 @@
         <a class="btn primary" href="#catalogo">Ver catálogo</a>
         <a class="btn ghost" href="#funcionamiento">Ver funcionamiento</a>
       </div>
-      <p class="micro">HEN 3.3.0 · HFW 4.91 · fotos y videos reales de la unidad</p>
+      <p class="micro">HEN 3.5.0 · HFW 4.93 · fotos y videos reales de la unidad</p>
     </div>
     <div class="hero-console">
       <div class="console-glow"></div>
@@ -126,8 +126,8 @@
       <article class="include-card"><div class="icon">🕹️</div><h3>3 joysticks</h3><p>Para jugar solo o compartir partidas.</p></article>
       <article class="include-card"><div class="icon">🔌</div><h3>Accesorios</h3><p>USB, alimentación y HDMI.</p></article>
       <article class="include-card"><div class="icon">📁</div><h3>Cable FTP</h3><p>Incluido para transferencia de archivos.</p></article>
-      <article class="include-card"><div class="icon">⚙️</div><h3>HEN 3.3.0</h3><p>La consola se entrega con la configuración indicada.</p></article>
-      <article class="include-card"><div class="icon">🧩</div><h3>HFW 4.91</h3><p>Versión indicada en la publicación.</p></article>
+      <article class="include-card"><div class="icon">⚙️</div><h3>HEN 3.5.0</h3><p>La consola se entrega con la configuración indicada.</p></article>
+      <article class="include-card"><div class="icon">🧩</div><h3>HFW 4.93</h3><p>Versión indicada en la publicación.</p></article>
     </div>
   </div>
 </section>
@@ -143,8 +143,24 @@
       <div>
         <span class="eyebrow">SIN RENDERS</span>
         <h3>Lo que ves es lo que se muestra.</h3>
-        <p>Las imágenes de esta sección salen directamente de la carpeta <code>imagenes/</code> del proyecto.</p>
+        <p>Fotos y video reales de la unidad para que puedas revisar la consola y su funcionamiento antes de consultar.</p>
         <a class="btn primary" href="#fotos">Abrir galería completa</a>
+      </div>
+    </div>
+    <div id="video" class="function-video">
+      <div class="video-heading">
+        <span class="eyebrow">VIDEO DE FUNCIONAMIENTO</span>
+        <h3>Así funciona la PS3.</h3>
+        <p>Video real de la unidad publicada. Mirá el encendido y la experiencia de uso antes de consultar.</p>
+      </div>
+      <div class="youtube-player" id="youtubePlayer">
+        <div class="youtube-placeholder" id="youtubePlaceholder">
+          <span class="youtube-icon">▶</span>
+          <strong>Video de funcionamiento</strong>
+          <p>El video se carga desde YouTube para no ocupar espacio en GitHub.</p>
+          <small>Configurá la URL en <code>app.js</code>.</small>
+        </div>
+        <iframe id="youtubeFrame" title="Video de funcionamiento de PS3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen hidden></iframe>
       </div>
     </div>
   </div>
@@ -208,7 +224,7 @@
 <section id="catalogo" class="section">
   <div class="container">
     <div class="section-head catalog-head">
-      <div><div class="eyebrow">BIBLIOTECA</div><h2>Catálogo de 32 juegos</h2></div>
+      <div><div class="eyebrow">BIBLIOTECA</div><h2>Catálogo de 31 juegos</h2></div>
       <p>Buscá por nombre o filtrá por categoría. Las portadas se intentan cargar automáticamente desde Wikipedia; si una no aparece, queda una tarjeta limpia como respaldo.</p>
     </div>
     <div class="catalog-tools">
@@ -249,7 +265,7 @@
     <div class="trans-grid">
       <div><h3>📸 Fotos y videos reales</h3><p>La página está pensada para mostrar la unidad publicada y no una consola genérica.</p></div>
       <div><h3>🎮 Catálogo organizado</h3><p>Podés buscar los juegos por nombre y categoría.</p></div>
-      <div><h3>⚙️ Modificación declarada</h3><p>Se informa HEN 3.3.0 y HFW 4.91 tal como fueron indicados para esta unidad.</p></div>
+      <div><h3>⚙️ Modificación declarada</h3><p>Se informa HEN 3.5.0 y HFW 4.93 tal como fueron indicados para esta unidad.</p></div>
       <div><h3>ℹ️ FC 24 aclarado</h3><p>EA SPORTS FC 24 no tuvo lanzamiento oficial para PS3; en la publicación se presenta como una modificación para PS3, no como una edición oficial de Sony/EA.</p></div><div><h3>📺 Movian7 + YouTube</h3><p>La unidad se presenta con Movian7 instalado para entretenimiento y streaming, y la página también informa que se puede ver YouTube desde la consola.</p></div>
     </div>
   </div>
@@ -257,11 +273,11 @@
 
 <section id="contacto" class="cta-section">
   <div class="container cta">
-    <div class="eyebrow">¿TE INTERESA?</div>
-    <h2>Conocé la consola completa y consultá disponibilidad.</h2>
-    <p>Reemplazá el enlace de WhatsApp y el precio en el archivo <code>app.js</code> antes de publicar.</p>
+    <div class="eyebrow">¿QUERÉS SABER EL PRECIO?</div>
+    <h2>Consultá el precio y la disponibilidad directamente por WhatsApp.</h2>
+    <p>Precio: consultalo directamente por WhatsApp. Te respondemos disponibilidad y valor de la unidad.</p>
     <div class="actions">
-      <a id="whatsapp" class="btn primary big" href="#" target="_blank" rel="noopener">💬 Consultar por WhatsApp</a>
+      <a id="whatsapp" class="btn primary big" href="#" target="_blank" rel="noopener">💬 Consultar precio por WhatsApp</a>
       <a class="btn ghost big" href="#inicio">Volver arriba ↑</a>
     </div>
   </div>
@@ -279,8 +295,8 @@
       <details open><summary>¿Qué modelo y capacidad tiene?</summary><p>Es una PlayStation 3 Super Slim con 500 GB de almacenamiento.</p></details>
       <details><summary>¿Cuántos joysticks incluye?</summary><p>La publicación incluye 3 joysticks.</p></details>
       <details><summary>¿Qué cables incluye?</summary><p>Incluye cargador USB, cable de alimentación, cable HDMI y cable FTP para transferencia de archivos.</p></details>
-      <details><summary>¿Qué modificación tiene?</summary><p>La unidad se presenta con HEN 3.3.0 y HFW 4.91, tal como fueron indicados para esta consola.</p></details>
-      <details><summary>¿El catálogo tiene 32 juegos?</summary><p>Sí. El catálogo de esta página está preparado para mostrar los 32 títulos seleccionados para la publicación.</p></details>
+      <details><summary>¿Qué modificación tiene?</summary><p>La unidad se presenta con HEN 3.5.0 y HFW 4.93, tal como fueron indicados para esta consola.</p></details>
+      <details><summary>¿El catálogo tiene 31 juegos?</summary><p>Sí. El catálogo de esta página está preparado para mostrar los 31 títulos seleccionados para la publicación.</p></details>
       <details><summary>¿EA SPORTS FC 24 es una versión oficial de PS3?</summary><p>No. Se presenta como un mod para PS3. La página evita confundirlo con una edición oficial de PS3.</p></details><details><summary>¿La PS3 tiene Movian7 y YouTube?</summary><p>Sí. La publicación indica Movian7 instalado y la página destaca que también se puede ver YouTube. Las capturas de la interfaz están incluidas en la galería de entretenimiento.</p></details>
     </div>
   </div>
@@ -291,7 +307,7 @@
     <div>
       <div class="eyebrow">RESUMEN DE LA PUBLICACIÓN</div>
       <h2>PS3 Super Slim · 500 GB</h2>
-      <p>32 juegos · 3 joysticks · HDMI · alimentación · USB · FTP · HEN 3.3.0 · HFW 4.91</p>
+      <p>31 juegos · 3 joysticks · HDMI · alimentación · USB · FTP · HEN 3.5.0 · HFW 4.93</p>
     </div>
     <a class="btn primary big" href="#contacto">Quiero consultar</a>
   </div>

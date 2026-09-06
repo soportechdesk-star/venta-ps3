@@ -17,13 +17,25 @@
 
 El sitio deja el precio, ubicación y modalidad de entrega fuera del código principal para que puedas incorporarlos en la sección de contacto cuando los definas.
 
-## Imágenes y videos
+## Imágenes y video
 
 - La galería usa las 10 fotos reales incluidas en `imagenes/`.
 - Las fotos se pueden ampliar con un visor y navegar con las flechas del teclado.
 - Las portadas de juegos se intentan cargar automáticamente desde Wikipedia; si una no existe, aparece una tarjeta de respaldo.
-- El botón "Gameplay" abre una búsqueda de YouTube para el juego + PS3, evitando republicar videos ajenos en tu servidor.
-- El ZIP actual no contiene archivos de video, por eso la página no muestra reproductores rotos. Si después agregás videos, se puede volver a incorporar una sección de reproducción.
+- El botón "Gameplay" abre una búsqueda de YouTube para el juego + PS3.
+- **El video de funcionamiento no se guarda en este repositorio.** Se carga desde YouTube mediante un `iframe`, evitando subir el MP4 pesado a GitHub.
+
+### Configurar el video de funcionamiento
+
+Abrí `app.js` y buscá:
+
+`const youtubeVideoUrl = "";`
+
+Pegá entre las comillas la URL completa de tu video de YouTube. Ejemplo:
+
+`const youtubeVideoUrl = "https://www.youtube.com/watch?v=ABC123XYZ";`
+
+También acepta enlaces `youtu.be`, `/shorts/` y `/embed/`. Si dejás la variable vacía, la página mostrará un aviso en lugar de un reproductor roto.
 
 
 ## Nota sobre EA SPORTS FC 24
@@ -39,9 +51,11 @@ La página lo presenta como "EA Sports FC 24 — Mod PS3", no como un lanzamient
 - La galería ya usa las 10 fotos reales incluidas en `imagenes/`, con visor ampliado y navegación por teclado.
 
 
-## Actualización futura del video de la consola
+## Recomendación para el video de la consola
 
-Cuando termines de incorporar los 3 juegos restantes, grabá un único video definitivo de 45–60 segundos, preferentemente de frente a la TV:
+Cuando tengas el video definitivo, subilo a YouTube como **No listado** si querés que solamente puedan verlo quienes tengan el enlace. Después pegá su URL en `youtubeVideoUrl` dentro de `app.js`.
+
+Idealmente, grabá un único video de 45–60 segundos, preferentemente de frente a la TV:
 1. Menú de PS3.
 2. Recorrido rápido del catálogo.
 3. Mostrar Metal Gear Solid V.
@@ -51,7 +65,7 @@ Cuando termines de incorporar los 3 juegos restantes, grabá un único video def
 7. Mostrar los 3 joysticks/accesorios.
 8. Cerrar con el menú principal.
 
-Luego reemplazá `assets/videos/consola-menu-1.mp4` y/o `consola-menu-2.mp4` por el nuevo archivo, conservando esos nombres para no tocar el HTML.
+No hace falta copiar el MP4 al repositorio: el sitio lo reproducirá directamente desde YouTube.
 
 ## Recomendación para GitHub Pages
 
