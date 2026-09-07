@@ -3,130 +3,114 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta property="og:title" content="PlayStation 3 Super Slim 500 GB — 31 juegos">
-  <meta property="og:description" content="PS3 Super Slim 500 GB con 31 juegos, 3 joysticks y Movian7 para entretenimiento y streaming, incluyendo YouTube.">
-  <meta name="theme-color" content="#08090d">
-  <meta name="description" content="PlayStation 3 Super Slim 500 GB con 31 juegos, 3 joysticks, Movian7 para entretenimiento y streaming y acceso a YouTube.">
-  <title>PS3 Super Slim 500 GB | Juegos + Movian7 + YouTube</title>
+  <meta name="theme-color" content="#07080c">
+  <meta name="description" content="PS3 Super Slim 500 GB con 31 juegos, 3 joysticks, accesorios, HEN 3.5.0, HFW 4.93 y Movian7 instalado.">
+  <meta property="og:title" content="PS3 Super Slim 500 GB · 31 juegos">
+  <meta property="og:description" content="Unidad real con 31 juegos, 3 joysticks, accesorios y Movian7. Consultá precio y disponibilidad.">
+  <title>PS3 Super Slim 500 GB · 31 juegos + Movian7</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="topbar">
+<div class="progress" id="progress"></div>
+
+<header class="topbar" id="top">
   <div class="container nav">
-    <a class="brand" href="#inicio"><span>PS3</span> SUPER SLIM</a>
-    <nav>
-      <a href="#fotos">Fotos</a><a href="#entretenimiento">Entretenimiento</a><a href="#catalogo">Catálogo</a>
+    <a class="brand" href="#inicio" aria-label="PS3 Super Slim, inicio"><span>PS3</span><b>SUPER SLIM</b></a>
+    <nav aria-label="Navegación principal">
+      <a href="#fotos">Fotos</a>
       <a href="#incluye">Incluye</a>
-      <a href="#funcionamiento">Funcionamiento</a><a href="#video">Video</a>
-      <a class="nav-cta" href="#contacto">Consultar</a>
+      <a href="#entretenimiento">Movian7</a>
+      <a href="#catalogo">Juegos</a>
+      <a href="#faq">FAQ</a>
+      <a class="nav-cta" href="#contacto">Consultar <span>↗</span></a>
     </nav>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">☰</button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#fotos">Fotos</a><a href="#incluye">Incluye</a><a href="#entretenimiento">Movian7</a><a href="#catalogo">Juegos</a><a href="#faq">FAQ</a><a class="btn primary" href="#contacto">Consultar precio</a>
   </div>
 </header>
 
 <main>
 <section id="inicio" class="hero">
+  <div class="hero-orb orb-one"></div><div class="hero-orb orb-two"></div>
   <div class="container hero-grid">
     <div class="hero-copy">
-      <div class="eyebrow">PLAYSTATION 3 · 500 GB</div>
-      <h1>Una PS3 preparada para <span>jugar y disfrutar.</span></h1>
-      <p class="lead">Super Slim de 500 GB, 3 joysticks, 32 juegos y <strong>Movian7 instalado</strong> para sumar entretenimiento y streaming, incluyendo <strong>YouTube</strong>.</p>
-      <div class="hero-stats">
-        <div><strong>500 GB</strong><small>almacenamiento</small></div>
-        <div><strong>32</strong><small>juegos del catálogo</small></div>
-        <div><strong>3</strong><small>joysticks</small></div>
+      <div class="eyebrow"><span class="dot"></span> PLAYSTATION 3 · UNIDAD REAL</div>
+      <h1>La PS3 que te da ganas de <em>volver a jugar.</em></h1>
+      <p class="lead">Super Slim de <strong>500 GB</strong>, <strong>31 juegos</strong>, 3 joysticks y <strong>Movian7 instalado</strong> para sumar entretenimiento desde la misma consola.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="#catalogo">Explorar 31 juegos <span>↓</span></a>
+        <a class="btn ghost" href="#fotos">Ver fotos reales</a>
       </div>
-      <div class="actions">
-        <a class="btn primary" href="#catalogo">Ver catálogo</a>
-        <a class="btn ghost" href="#funcionamiento">Ver funcionamiento</a>
+      <div class="hero-specs">
+        <div><strong>500</strong><span>GB</span><small>almacenamiento</small></div>
+        <div><strong>31</strong><span>+</span><small>juegos</small></div>
+        <div><strong>3</strong><span>×</span><small>joysticks</small></div>
+        <div><strong>1</strong><span>×</span><small>unidad real</small></div>
       </div>
-      <p class="micro">HEN 3.5.0 · HFW 4.93 · fotos y videos reales de la unidad</p>
+      <p class="micro">HEN 3.5.0 · HFW 4.93 · HDMI · USB · alimentación · cable FTP</p>
     </div>
-    <div class="hero-console">
-      <div class="console-glow"></div>
+    <div class="hero-visual">
       <div class="hero-photo-card">
-        <img src="imagenes/IMG-20260905-WA0003.jpg" alt="PlayStation 3 Super Slim y accesorios reales de la publicación">
+        <img src="imagenes/IMG-20260905-WA0003.jpg" alt="PS3 Super Slim real con tres joysticks y accesorios" fetchpriority="high">
+        <div class="hero-photo-top"><span>PUBLICACIÓN REAL</span><span>500 GB</span></div>
         <div class="hero-photo-overlay">
-          <span>UNIDAD REAL</span>
-          <strong>PS3 Super Slim · 500 GB</strong>
-          <small>Fotos tomadas de la consola publicada</small>
+          <span>PS3 SUPER SLIM</span>
+          <strong>Lista para jugar.</strong>
+          <small>Consola + 3 joysticks + accesorios</small>
         </div>
       </div>
+      <div class="floating-card"><span class="pulse"></span><div><b>Movian7 instalado</b><small>Entretenimiento + YouTube</small></div></div>
     </div>
   </div>
 </section>
 
 <section class="trust-strip">
   <div class="container trust-grid">
-    <span>✓ Unidad real</span><span>✓ Catálogo detallado</span><span>✓ 3 joysticks</span><span>✓ HDMI incluido</span><span>✓ Cable FTP incluido</span><span>✓ Movian7 + YouTube</span>
+    <span>✓ Fotos de la unidad</span><span>✓ 31 juegos</span><span>✓ 3 joysticks</span><span>✓ HDMI incluido</span><span>✓ Cable FTP</span><span>✓ Movian7 + YouTube</span>
   </div>
 </section>
 
 <section id="fotos" class="section photo-section">
   <div class="container">
     <div class="section-head">
-      <div><div class="eyebrow">FOTOS REALES</div><h2>La consola y sus accesorios.</h2></div>
+      <div><div class="eyebrow">01 · FOTOS REALES</div><h2>Mirala desde todos los ángulos.</h2></div>
+      <p>Hacé clic en cualquier imagen para verla grande y navegar por toda la galería.</p>
     </div>
     <div class="photo-grid">
       <button class="photo-card photo-feature" type="button" data-lightbox="imagenes/IMG-20260905-WA0003.jpg" data-caption="Consola, 3 joysticks y accesorios incluidos">
-        <img src="imagenes/IMG-20260905-WA0003.jpg" alt="Consola PS3 Super Slim con tres joysticks y cables" loading="eager">
-        <span>Consola + accesorios</span>
+        <img src="imagenes/IMG-20260905-WA0003.jpg" alt="Consola PS3 Super Slim con tres joysticks y accesorios" loading="eager"><span>Consola + accesorios</span><i>↗</i>
       </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0014.jpg" data-caption="Vista lateral de la PS3 Super Slim">
-        <img src="imagenes/IMG-20260905-WA0014.jpg" alt="Vista lateral de la PS3 Super Slim" loading="lazy">
-        <span>Vista lateral</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0010.jpg" data-caption="Vista superior de la consola">
-        <img src="imagenes/IMG-20260905-WA0010.jpg" alt="Vista superior de la PS3 Super Slim" loading="lazy">
-        <span>Vista superior</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0016.jpg" data-caption="Los 3 joysticks incluidos">
-        <img src="imagenes/IMG-20260905-WA0016.jpg" alt="Tres joysticks incluidos" loading="lazy">
-        <span>3 joysticks</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0023.jpg" data-caption="Cables y accesorios">
-        <img src="imagenes/IMG-20260905-WA0023.jpg" alt="Cables y accesorios incluidos" loading="lazy">
-        <span>Cables</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0005.jpg" data-caption="Cable USB incluido">
-        <img src="imagenes/IMG-20260905-WA0005.jpg" alt="Cable USB incluido" loading="lazy">
-        <span>USB</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0008.jpg" data-caption="Cable de alimentación">
-        <img src="imagenes/IMG-20260905-WA0008.jpg" alt="Cable de alimentación" loading="lazy">
-        <span>Alimentación</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0012.jpg" data-caption="Parte inferior de la consola">
-        <img src="imagenes/IMG-20260905-WA0012.jpg" alt="Parte inferior de la PS3 Super Slim" loading="lazy">
-        <span>Parte inferior</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0006.jpg" data-caption="Vista de los tres joysticks">
-        <img src="imagenes/IMG-20260905-WA0006.jpg" alt="Vista de los tres joysticks" loading="lazy">
-        <span>Joysticks · detalle</span>
-      </button>
-      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0018.jpg" data-caption="Otra vista lateral de la consola">
-        <img src="imagenes/IMG-20260905-WA0018.jpg" alt="Otra vista lateral de la PS3 Super Slim" loading="lazy">
-        <span>Detalle de la consola</span>
-      </button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0014.jpg" data-caption="Vista lateral de la PS3 Super Slim"><img src="imagenes/IMG-20260905-WA0014.jpg" alt="Vista lateral de la PS3 Super Slim" loading="lazy"><span>Vista lateral</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0010.jpg" data-caption="Vista superior de la consola"><img src="imagenes/IMG-20260905-WA0010.jpg" alt="Vista superior de la PS3 Super Slim" loading="lazy"><span>Vista superior</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0016.jpg" data-caption="Los 3 joysticks incluidos"><img src="imagenes/IMG-20260905-WA0016.jpg" alt="Tres joysticks incluidos" loading="lazy"><span>3 joysticks</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0023.jpg" data-caption="Cables y accesorios"><img src="imagenes/IMG-20260905-WA0023.jpg" alt="Cables y accesorios incluidos" loading="lazy"><span>Cables</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0005.jpg" data-caption="Cable USB incluido"><img src="imagenes/IMG-20260905-WA0005.jpg" alt="Cable USB incluido" loading="lazy"><span>USB</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0008.jpg" data-caption="Cable de alimentación"><img src="imagenes/IMG-20260905-WA0008.jpg" alt="Cable de alimentación" loading="lazy"><span>Alimentación</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0012.jpg" data-caption="Parte inferior de la consola"><img src="imagenes/IMG-20260905-WA0012.jpg" alt="Parte inferior de la PS3 Super Slim" loading="lazy"><span>Parte inferior</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0006.jpg" data-caption="Detalle de los joysticks"><img src="imagenes/IMG-20260905-WA0006.jpg" alt="Detalle de los tres joysticks" loading="lazy"><span>Joysticks · detalle</span><i>↗</i></button>
+      <button class="photo-card" type="button" data-lightbox="imagenes/IMG-20260905-WA0018.jpg" data-caption="Otra vista de la consola"><img src="imagenes/IMG-20260905-WA0018.jpg" alt="Otra vista de la PS3 Super Slim" loading="lazy"><span>Detalle de la consola</span><i>↗</i></button>
     </div>
   </div>
 </section>
 
-<section id="incluye" class="section">
+<section id="incluye" class="section included-section">
   <div class="container">
     <div class="section-head">
-      <div><div class="eyebrow">TODO EN UN SOLO PAQUETE</div><h2>¿Qué recibís?</h2></div>
-      <p>La idea es que puedas conocer exactamente qué incluye la publicación antes de consultar.</p>
+      <div><div class="eyebrow">02 · EL PAQUETE</div><h2>Todo lo que viene con la unidad.</h2></div>
+      <p>Información directa y ordenada para que sepas qué estás consultando antes de escribir.</p>
     </div>
     <div class="include-grid">
-      <article class="include-card"><div class="icon">🎮</div><h3>PS3 Super Slim</h3><p>500 GB de almacenamiento.</p></article>
-      <article class="include-card"><div class="icon">🕹️</div><h3>3 joysticks</h3><p>Para jugar solo o compartir partidas.</p></article>
-      <article class="include-card"><div class="icon">🔌</div><h3>Accesorios</h3><p>USB, alimentación y HDMI.</p></article>
-      <article class="include-card"><div class="icon">📁</div><h3>Cable FTP</h3><p>Incluido para transferencia de archivos.</p></article>
-      <article class="include-card"><div class="icon">⚙️</div><h3>HEN 3.5.0</h3><p>La consola se entrega con la configuración indicada.</p></article>
-      <article class="include-card"><div class="icon">🧩</div><h3>HFW 4.93</h3><p>Versión indicada en la publicación.</p></article>
+      <article class="include-card featured"><div class="icon">▣</div><div><small>CONSOLa</small><h3>PS3 Super Slim</h3><p>500 GB de almacenamiento.</p></div><b>01</b></article>
+      <article class="include-card"><div class="icon">⌁</div><div><small>CONTROL</small><h3>3 joysticks</h3><p>Para jugar solo o compartir.</p></div><b>02</b></article>
+      <article class="include-card"><div class="icon">⌁</div><div><small>CONEXIÓN</small><h3>HDMI + USB</h3><p>Accesorios para conectar y cargar.</p></div><b>03</b></article>
+      <article class="include-card"><div class="icon">↔</div><div><small>TRANSFERENCIA</small><h3>Cable FTP</h3><p>Incluido para transferencia de archivos.</p></div><b>04</b></article>
+      <article class="include-card"><div class="icon">⚙</div><div><small>CONFIGURACIÓN</small><h3>HEN 3.5.0</h3><p>Configuración indicada para esta unidad.</p></div><b>05</b></article>
+      <article class="include-card"><div class="icon">◈</div><div><small>SISTEMA</small><h3>HFW 4.93</h3><p>Versión indicada en la publicación.</p></div><b>06</b></article>
     </div>
   </div>
 </section>
@@ -134,108 +118,54 @@
 <section id="funcionamiento" class="section dark-section">
   <div class="container">
     <div class="section-head">
-      <div><div class="eyebrow">MATERIAL REAL</div><h2>Primero mirá la unidad.</h2></div>
+      <div><div class="eyebrow">03 · FUNCIONAMIENTO</div><h2>Primero, comprobá lo que vas a recibir.</h2></div>
     </div>
     <div class="showcase-strip">
-      <img src="imagenes/IMG-20260905-WA0018.jpg" alt="Vista lateral de la PS3 Super Slim" loading="lazy">
-      <div>
-        <h3>Lo que ves es lo que se muestra.</h3>
-        <p>Fotos y video reales de la unidad para que puedas revisar la consola y su funcionamiento antes de consultar.</p>
-        <a class="btn primary" href="#fotos">Abrir galería completa</a>
-      </div>
+      <div class="showcase-image"><img src="imagenes/IMG-20260905-WA0018.jpg" alt="Vista real de la PS3 Super Slim" loading="lazy"><span>UNIDAD REAL</span></div>
+      <div class="showcase-copy"><span class="mini-label">SIN FOTOS DE STOCK</span><h3>Lo que ves es la unidad publicada.</h3><p>La presentación está armada con fotos reales de la consola y sus accesorios. Así podés revisar el producto antes de consultar.</p><div class="check-list"><span>✓ Fotos reales</span><span>✓ Catálogo completo</span><span>✓ Configuración declarada</span></div><a class="btn primary" href="#video">Ver video de funcionamiento ↓</a></div>
     </div>
     <div id="video" class="function-video">
-      <div class="video-heading">
-        <span class="eyebrow">VIDEO DE FUNCIONAMIENTO</span>
-        <h3>Así funciona la PS3.</h3>
-        <p>Video real de la unidad publicada. Mirá el encendido y la experiencia de uso antes de consultar.</p>
-      </div>
+      <div class="video-heading"><span class="eyebrow">VIDEO DE FUNCIONAMIENTO</span><h3>Así funciona la PS3.</h3><p>El video se carga desde YouTube para mantener la página rápida y liviana.</p></div>
       <div class="youtube-player" id="youtubePlayer">
-        <div class="youtube-placeholder" id="youtubePlaceholder">
-          <span class="youtube-icon">▶</span>
-          <strong>Video de funcionamiento</strong>
-          <p>El video se carga desde YouTube.</p>
-        </div>
+        <div class="youtube-placeholder" id="youtubePlaceholder"><span class="youtube-play">▶</span><strong>Video de funcionamiento</strong><p>Configurá el enlace de YouTube en <code>app.js</code>.</p></div>
         <iframe id="youtubeFrame" title="Video de funcionamiento de PS3" loading="lazy" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen hidden></iframe>
       </div>
     </div>
   </div>
 </section>
 
-
 <section id="entretenimiento" class="section entertainment-section">
   <div class="container">
     <div class="section-head">
-      <div>
-        <div class="eyebrow">ENTRETENIMIENTO EN LA PS3</div>
-        <h2>Más que una consola: <span class="accent-text">Movian7 + YouTube.</span></h2>
-      </div>
-      <p>La unidad de esta publicación tiene <strong>Movian7 instalado</strong>, una opción de entretenimiento desde la propia PS3. Las capturas reales muestran su interfaz, categorías de películas y series y accesos a distintas plataformas.</p>
+      <div><div class="eyebrow">04 · ENTRETENIMIENTO</div><h2>Movian7 + <span class="accent-text">YouTube.</span></h2></div>
+      <p>Además de jugar, la unidad se presenta con Movian7 instalado. Las capturas de esta misma consola muestran su interfaz y opciones de entretenimiento.</p>
     </div>
-
     <div class="entertainment-hero">
-      <div class="entertainment-copy">
-        <span class="service-kicker">MOVIAN7 INSTALADO</span>
-        <h3>Películas, series, TV online y más contenido desde una sola interfaz.</h3>
-        <p>Además de jugar, podés usar la consola como centro de entretenimiento. <strong>YouTube también está disponible</strong>, ideal para pasar de una partida a tus videos favoritos sin cambiar de equipo.</p>
-        <div class="feature-pills">
-          <span>🎬 Películas</span>
-          <span>📺 Series</span>
-          <span>📡 TV online</span>
-          <span>▶ YouTube</span>
-        </div>
-        <p class="entertainment-note">Las imágenes son capturas reales de la interfaz incluida; la disponibilidad de cada servicio o contenido puede variar según la aplicación y su funcionamiento.</p>
-      </div>
+      <div class="entertainment-copy"><span class="service-kicker">MOVIAN7 INSTALADO</span><h3>Una PS3 pensada también para el rato de series y videos.</h3><p>Podés usar la consola como centro de entretenimiento. <strong>YouTube también está disponible</strong>, según la configuración y funcionamiento de la aplicación.</p><div class="feature-pills"><span>🎬 Películas</span><span>📺 Series</span><span>📡 TV online</span><span>▶ YouTube</span></div><p class="entertainment-note">Las imágenes son capturas reales de la interfaz incluida. La disponibilidad de cada servicio o contenido puede variar.</p></div>
       <div class="entertainment-collage">
-        <button class="stream-card stream-main" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.19.19.078.png" data-caption="Movian7 · categorías y estrenos">
-          <img src="imagenes-streaming/Screenshot_2026.09.05_18.19.19.078.png" alt="Interfaz de Movian7 con categorías y estrenos" loading="lazy">
-          <span>Movian7 · categorías y estrenos</span>
-        </button>
-        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.17.55.180.png" data-caption="Movian7 · categorías de películas">
-          <img src="imagenes-streaming/Screenshot_2026.09.05_18.17.55.180.png" alt="Movian7 con categorías de películas" loading="lazy">
-          <span>Películas</span>
-        </button>
-        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.20.15.253.png" data-caption="BFLIX TV Plus · películas, series y TV online">
-          <img src="imagenes-streaming/Screenshot_2026.09.05_18.20.15.253.png" alt="Interfaz de entretenimiento con películas, series y TV online" loading="lazy">
-          <span>Películas · series · TV</span>
-        </button>
-        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.20.54.387.png" data-caption="BFLIX TV Plus · sección de series y plataformas">
-          <img src="imagenes-streaming/Screenshot_2026.09.05_18.20.54.387.png" alt="Sección de series y accesos a plataformas de entretenimiento" loading="lazy">
-          <span>Series + plataformas</span>
-        </button>
+        <button class="stream-card stream-main" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.19.19.078.png" data-caption="Movian7 · categorías y estrenos"><img src="imagenes-streaming/Screenshot_2026.09.05_18.19.19.078.png" alt="Movian7 con categorías y estrenos" loading="lazy"><span>Movian7 · categorías y estrenos</span><i>↗</i></button>
+        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.17.55.180.png" data-caption="Movian7 · categorías de películas"><img src="imagenes-streaming/Screenshot_2026.09.05_18.17.55.180.png" alt="Movian7 con categorías de películas" loading="lazy"><span>Películas</span><i>↗</i></button>
+        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.20.15.253.png" data-caption="BFLIX TV Plus · películas, series y TV online"><img src="imagenes-streaming/Screenshot_2026.09.05_18.20.15.253.png" alt="Películas, series y TV online" loading="lazy"><span>Películas · series · TV</span><i>↗</i></button>
+        <button class="stream-card" type="button" data-lightbox="imagenes-streaming/Screenshot_2026.09.05_18.20.54.387.png" data-caption="BFLIX TV Plus · series y plataformas"><img src="imagenes-streaming/Screenshot_2026.09.05_18.20.54.387.png" alt="Series y plataformas de entretenimiento" loading="lazy"><span>Series + plataformas</span><i>↗</i></button>
       </div>
     </div>
-
-    <div class="youtube-callout">
-      <div class="youtube-icon">▶</div>
-      <div>
-        <strong>¿También querés ver YouTube?</strong>
-        <p>Sí. La página lo destaca como parte de las posibilidades de entretenimiento de la consola.</p>
-      </div>
-      <a class="btn ghost" href="#contacto">Consultar la unidad</a>
-    </div>
+    <div class="youtube-callout"><div class="youtube-icon">▶</div><div><strong>YouTube también forma parte de la experiencia.</strong><p>La publicación informa que se puede usar YouTube desde la consola.</p></div><a class="btn ghost" href="#contacto">Consultar</a></div>
   </div>
 </section>
 
-<section id="catalogo" class="section">
+<section id="catalogo" class="section catalog-section">
   <div class="container">
     <div class="section-head catalog-head">
-      <div><div class="eyebrow">BIBLIOTECA</div><h2>Catálogo de 32 juegos</h2></div>
-      <p>Buscá por nombre o filtrá por categoría. Las portadas se intentan cargar automáticamente desde Wikipedia; si una no aparece, queda una tarjeta limpia como respaldo.</p>
+      <div><div class="eyebrow">05 · BIBLIOTECA</div><h2>31 juegos para elegir.</h2></div>
+      <p>Buscá por nombre o filtrá por género. El contador se actualiza automáticamente.</p>
     </div>
     <div class="catalog-tools">
-      <input id="search" type="search" placeholder="🔎 Buscar un juego..." aria-label="Buscar un juego">
-      <div class="filters" id="filters">
-        <button class="filter active" data-filter="todos">Todos</button>
-        <button class="filter" data-filter="destacado">Destacados</button>
-        <button class="filter" data-filter="shooter">Shooters</button>
-        <button class="filter" data-filter="terror">Terror</button>
-        <button class="filter" data-filter="coop">Cooperativos</button>
-        <button class="filter" data-filter="accion">Acción</button>
-        <button class="filter" data-filter="lucha">Lucha</button>
-        <button class="filter" data-filter="deportes">Deportes</button>
+      <label class="searchbox"><span>⌕</span><input id="search" type="search" placeholder="Buscar un juego..." aria-label="Buscar un juego"><kbd>⌘ K</kbd></label>
+      <div class="filters" id="filters" aria-label="Filtros del catálogo">
+        <button class="filter active" data-filter="todos">Todos</button><button class="filter" data-filter="destacado">Destacados</button><button class="filter" data-filter="shooter">Shooters</button><button class="filter" data-filter="terror">Terror</button><button class="filter" data-filter="coop">Cooperativos</button><button class="filter" data-filter="accion">Acción</button><button class="filter" data-filter="lucha">Lucha</button><button class="filter" data-filter="deportes">Deportes</button>
       </div>
     </div>
+    <div class="catalog-meta"><span id="resultCount">31 juegos</span><span>Portadas cargadas automáticamente cuando están disponibles</span></div>
     <div id="catalog" class="catalog"></div>
     <p id="empty" class="empty" hidden>No encontramos juegos con esa búsqueda.</p>
   </div>
@@ -243,88 +173,67 @@
 
 <section class="section highlight">
   <div class="container highlight-grid">
-    <div>
-      <div class="eyebrow">JUGAR EN COMPAÑÍA</div>
-      <h2>3 joysticks para compartir la experiencia.</h2>
-      <p>Además del catálogo, el paquete incluye tres joysticks. Es un detalle especialmente interesante para juegos cooperativos, de lucha y partidas locales.</p>
-      <a class="btn primary" href="#catalogo">Ver juegos cooperativos</a>
-    </div>
-    <div class="genre-pills">
-      <span>Castle Crashers</span><span>Rayman Legends</span><span>LittleBigPlanet 2</span><span>Trine 2</span><span>Street Fighter X Tekken</span><span>Ratchet & Clank</span>
-    </div>
+    <div><div class="eyebrow">06 · PARA COMPARTIR</div><h2>Tres joysticks cambian el plan.</h2><p>El paquete incluye tres joysticks, algo especialmente útil para juegos cooperativos, de lucha y partidas locales.</p><a class="btn primary" href="#catalogo" data-coop>Ver cooperativos</a></div>
+    <div class="genre-pills"><span>Castle Crashers</span><span>Rayman Legends</span><span>LittleBigPlanet 2</span><span>Trine 2</span><span>Street Fighter X Tekken</span><span>Ratchet & Clank</span></div>
   </div>
 </section>
 
 <section class="section transparency">
   <div class="container">
-    <div class="section-head"><div><div class="eyebrow">TRANSPARENCIA</div><h2>Información clara antes de comprar</h2></div></div>
+    <div class="section-head"><div><div class="eyebrow">07 · CLARIDAD</div><h2>Sin vueltas antes de comprar.</h2></div></div>
     <div class="trans-grid">
-      <div><h3>📸 Fotos y videos reales</h3><p>La página está pensada para mostrar la unidad publicada y no una consola genérica.</p></div>
-      <div><h3>🎮 Catálogo organizado</h3><p>Podés buscar los juegos por nombre y categoría.</p></div>
+      <div><h3>📸 Fotos y videos reales</h3><p>La página muestra la unidad publicada, no una consola genérica.</p></div>
+      <div><h3>🎮 Catálogo organizado</h3><p>Podés buscar los 31 títulos por nombre o categoría.</p></div>
       <div><h3>⚙️ Modificación declarada</h3><p>Se informa HEN 3.5.0 y HFW 4.93 tal como fueron indicados para esta unidad.</p></div>
-      <div><h3>ℹ️ FC 24 aclarado</h3><p>EA SPORTS FC 24 no tuvo lanzamiento oficial para PS3; en la publicación se presenta como una modificación para PS3 de FIFA 19, no como una edición oficial de Sony/EA.</p></div><div><h3>📺 Movian7 + YouTube</h3><p>La unidad se presenta con Movian7 instalado para entretenimiento y streaming, y la página también informa que se puede ver YouTube desde la consola.</p></div>
+      <div><h3>ℹ️ FC 24 aclarado</h3><p>EA SPORTS FC 24 se presenta como una modificación para PS3 basada en FIFA 19, no como una edición oficial de PS3.</p></div>
+      <div><h3>📺 Movian7 + YouTube</h3><p>La unidad se presenta con Movian7 instalado y con posibilidad de usar YouTube.</p></div>
+      <div><h3>💬 Consulta directa</h3><p>Precio y disponibilidad se consultan directamente, sin inventar valores en la página.</p></div>
     </div>
   </div>
 </section>
 
 <section id="contacto" class="cta-section">
   <div class="container cta">
-    <div class="eyebrow">¿QUERÉS SABER EL PRECIO?</div>
-    <h2>Consultá el precio y la disponibilidad directamente por WhatsApp.</h2>
-    <p>Precio: consultalo directamente por WhatsApp. Te respondemos disponibilidad y valor de la unidad.</p>
-    <div class="actions">
-      <a id="whatsapp" class="btn primary big" href="#" target="_blank" rel="noopener">💬 Consultar precio por WhatsApp</a>
-      <a class="btn ghost big" href="#inicio">Volver arriba ↑</a>
-    </div>
+    <div class="cta-badge">PS3 SUPER SLIM · 500 GB</div>
+    <h2>¿Te interesa? Hablemos.</h2>
+    <p>Consultá precio, disponibilidad y cualquier detalle de la unidad directamente por WhatsApp.</p>
+    <div class="actions"><a id="whatsapp" class="btn primary big" href="#" target="_blank" rel="noopener">💬 Consultar por WhatsApp <span>↗</span></a><a class="btn ghost big" href="#fotos">Volver a las fotos</a></div>
   </div>
 </section>
-</main>
 
-
-<section class="section faq-section">
+<section id="faq" class="section faq-section">
   <div class="container">
-    <div class="section-head">
-      <div><div class="eyebrow">PREGUNTAS FRECUENTES</div><h2>Antes de comprar</h2></div>
-      <p>Respuestas rápidas para reducir dudas y hacer más fácil la decisión.</p>
-    </div>
+    <div class="section-head"><div><div class="eyebrow">08 · FAQ</div><h2>Preguntas frecuentes.</h2></div><p>Lo esencial, resumido.</p></div>
     <div class="faq">
-      <details open><summary>¿Qué modelo y capacidad tiene?</summary><p>Es una PlayStation 3 Super Slim con 500 GB de almacenamiento.</p></details>
+      <details open><summary>¿Qué modelo y capacidad tiene?</summary><p>PlayStation 3 Super Slim con 500 GB de almacenamiento.</p></details>
       <details><summary>¿Cuántos joysticks incluye?</summary><p>La publicación incluye 3 joysticks.</p></details>
-      <details><summary>¿Qué cables incluye?</summary><p>Incluye cargador USB, cable de alimentación, cable HDMI y cable FTP para transferencia de archivos.</p></details>
-      <details><summary>¿Qué modificación tiene?</summary><p>La unidad se presenta con HEN 3.5.0 y HFW 4.93, tal como fueron indicados para esta consola.</p></details>
-      <details><summary>¿El catálogo tiene 32 juegos?</summary><p>Sí. El catálogo de esta página está preparado para mostrar los 32 títulos seleccionados para la publicación.</p></details>
-      <details><summary>¿EA SPORTS FC 24 es una versión oficial de PS3?</summary><p>No. Se presenta como un mod para PS3 de FIFA 19. La página evita confundirlo con una edición oficial de PS3.</p></details><details><summary>¿La PS3 tiene Movian7 y YouTube?</summary><p>Sí. La publicación indica Movian7 instalado y la página destaca que también se puede ver YouTube. Las capturas de la interfaz están incluidas en la galería de entretenimiento.</p></details>
+      <details><summary>¿Qué accesorios incluye?</summary><p>USB, cable de alimentación, HDMI y cable FTP para transferencia de archivos.</p></details>
+      <details><summary>¿Qué modificación tiene?</summary><p>La unidad se presenta con HEN 3.5.0 y HFW 4.93, según la información de la publicación.</p></details>
+      <details><summary>¿El catálogo tiene 31 juegos?</summary><p>Sí. Esta página reúne los 31 títulos seleccionados para la publicación.</p></details>
+      <details><summary>¿FC 24 es una edición oficial de PS3?</summary><p>No. Se presenta como una modificación para PS3 basada en FIFA 19, no como un lanzamiento oficial de FC 24 para PS3.</p></details>
+      <details><summary>¿Tiene Movian7 y YouTube?</summary><p>Sí. La publicación indica Movian7 instalado y la página destaca YouTube como opción de entretenimiento.</p></details>
+      <details><summary>¿Dónde consulto el precio?</summary><p>El precio y la disponibilidad se consultan directamente por WhatsApp mediante el botón de esta página.</p></details>
     </div>
   </div>
 </section>
 
 <section class="section offer-section">
-  <div class="container offer-card">
-    <div>
-      <div class="eyebrow">RESUMEN DE LA PUBLICACIÓN</div>
-      <h2>PS3 Super Slim · 500 GB</h2>
-      <p>32 juegos · 3 joysticks · HDMI · alimentación · USB · FTP · HEN 3.5.0 · HFW 4.93</p>
-    </div>
-    <a class="btn primary big" href="#contacto">Quiero consultar</a>
-  </div>
+  <div class="container offer-card"><div><div class="eyebrow">RESUMEN</div><h2>PS3 Super Slim · 500 GB</h2><p>31 juegos · 3 joysticks · HDMI · USB · FTP · HEN 3.5.0 · HFW 4.93 · Movian7</p></div><a class="btn primary big" href="#contacto">Quiero consultar ↗</a></div>
 </section>
+</main>
 
-<div class="lightbox" id="lightbox" hidden>
+<div class="lightbox" id="lightbox" hidden role="dialog" aria-modal="true" aria-label="Galería de imágenes">
   <button class="lightbox-close" type="button" aria-label="Cerrar">×</button>
   <button class="lightbox-prev" type="button" aria-label="Foto anterior">‹</button>
-  <figure>
-    <img id="lightbox-image" src="" alt="">
-    <figcaption id="lightbox-caption"></figcaption>
-  </figure>
+  <figure><img id="lightbox-image" src="" alt=""><figcaption id="lightbox-caption"></figcaption></figure>
   <button class="lightbox-next" type="button" aria-label="Foto siguiente">›</button>
+  <div class="lightbox-counter" id="lightboxCounter"></div>
 </div>
 
-<footer>
-  <div class="container footer">
-    <div><strong>PS3 Super Slim · 500 GB</strong><span>Catálogo y presentación de la unidad.</span></div>
-    <span>© <span id="year"></span> · Publicación independiente</span>
-  </div>
-</footer>
+<a class="floating-wa" id="floatingWa" href="#contacto" aria-label="Consultar por WhatsApp">💬</a>
+<button class="back-top" id="backTop" type="button" aria-label="Volver arriba">↑</button>
+
+<footer><div class="container footer"><div><a class="brand" href="#inicio"><span>PS3</span> SUPER SLIM</a><p>Catálogo y presentación de la unidad real.</p></div><div class="footer-links"><a href="#fotos">Fotos</a><a href="#catalogo">Juegos</a><a href="#faq">FAQ</a><a href="#contacto">Contacto</a></div><span>© <span id="year"></span> · Publicación independiente</span></div></footer>
 <script src="app.js"></script>
 </body>
 </html>
